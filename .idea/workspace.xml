@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="Add Display name for readability">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="Add @DisplayNameGeneration for readability at class level">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +80,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoUtilsTest.Test_Reference_Of_Objects_Is_Same" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JunitTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pratice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pratice" />
+      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
+      <option name="METHOD_NAME" value="Test_Reference_Of_Objects_Is_Same" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoUtilsTest.Test_inputString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JunitTest" />
       <extension name="coverage">
@@ -91,22 +107,6 @@
       <option name="PACKAGE_NAME" value="org.pratice" />
       <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
       <option name="METHOD_NAME" value="Test_inputString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoUtilsTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JunitTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pratice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.pratice" />
-      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
-      <option name="METHOD_NAME" value="testAdd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,10 +144,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DemoUtilsTest" />
+        <item itemvalue="JUnit.DemoUtilsTest.Test_Reference_Of_Objects_Is_Same" />
         <item itemvalue="JUnit.DemoUtilsTest.Test_inputString" />
         <item itemvalue="JUnit.DemoUtilsTest.test_String_is_Null" />
         <item itemvalue="Application.DemoUtils" />
-        <item itemvalue="JUnit.DemoUtilsTest.testAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1724937419227</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add @DisplayNameGeneration for readability at class level">
+      <created>1724937902626</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724937902626</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +230,7 @@
     <MESSAGE value="Add @BeforeEach and @AfterEach" />
     <MESSAGE value="Add lifeCycle Method-info" />
     <MESSAGE value="Add Display name for readability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Display name for readability" />
+    <MESSAGE value="Add @DisplayNameGeneration for readability at class level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add @DisplayNameGeneration for readability at class level" />
   </component>
 </project>

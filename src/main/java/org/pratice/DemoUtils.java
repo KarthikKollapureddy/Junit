@@ -13,4 +13,18 @@ public class DemoUtils {
     public String returnInputString(String str){
         return str;
     }
+
+    String junit = "junit";
+    String junitDuplicate = "junit";
+
+    String junitDuplicateNew = new String("junit");
+    public String getJunit(){
+        return junit;
+    }
+    public String getJunitDuplicate(){
+        return junitDuplicate;
+    }
+    public String getJunitDuplicateNew(){
+        return junitDuplicateNew;
+    }
 }

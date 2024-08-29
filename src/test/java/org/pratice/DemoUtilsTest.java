@@ -47,10 +47,18 @@ class DemoUtilsTest {
         assertTrue(demoUtils.isNull("      "),"String is null/empty");
         assertFalse(demoUtils.isNull("Hello"),"String Hello is not null/empty");
     }
-    @DisplayName("Test method is returning what is passed as input ")
     @Test
-    void Test_inputString(){
+    void test_inputString(){
         assertNull(demoUtils.returnInputString(null),"Input message is Null");
         assertNotNull(demoUtils.returnInputString("Not Null"),"Input message is not Null");
+    }
+    /*
+    assertSame - assert items refer to same Object
+    assertNotSame - assert items DO NOT refer to same Object
+     */
+    @Test
+    void test_Reference_Of_Objects_Is_Same(){
+        assertSame(demoUtils.getJunit(),demoUtils.getJunitDuplicate(),"Both should refer to same reference");
+        assertNotSame(demoUtils.getJunit(),demoUtils.getJunitDuplicateNew(),"Both should refer to different reference");
     }
 }
