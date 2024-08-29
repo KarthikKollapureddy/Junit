@@ -4,6 +4,13 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
+/*
+junit have generators class which can be used to generate test names
+1. Simple - removes () in test method name.
+2. ReplaceUnderscore - replaces underscores with spaces.
+3. IndicativeSentences - generates sentence based on testClass and testName.
+ */
 //no need to specify class as public
 class DemoUtilsTest {
 
@@ -30,13 +37,11 @@ class DemoUtilsTest {
     void releaseResources(){
 //        System.out.println("Executes after each test case, mostly to release resources and for cleanup");
     }
-    @DisplayName("Testing Add method")
     @Test
     void test_Add_Method(){
         assertEquals(8,demoUtils.add(2,6),"2+6 should equals to 8");
         assertNotEquals(6,demoUtils.add(2,6),"2+6 should not equals to 6");
     }
-    @DisplayName("Test Either String is Null or Empty")
     @Test
     void test_String_is_Null_OR_Empty(){
         assertTrue(demoUtils.isNull("      "),"String is null/empty");
