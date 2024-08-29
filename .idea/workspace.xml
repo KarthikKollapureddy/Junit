@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" afterDir="false" />
+    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="create basic test case for add method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +49,54 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DemoUtilsTest">
+    <configuration name="DemoUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtils" />
+      <module name="JunitTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pratice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JunitTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pratice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pratice" />
+      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoUtilsTest.Test_inputString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JunitTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pratice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pratice" />
+      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
+      <option name="METHOD_NAME" value="Test_inputString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoUtilsTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JunitTest" />
       <extension name="coverage">
@@ -65,6 +108,22 @@
       <option name="PACKAGE_NAME" value="org.pratice" />
       <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
       <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoUtilsTest.test_String_is_Null" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JunitTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pratice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pratice" />
+      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
+      <option name="METHOD_NAME" value="test_String_is_Null" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,6 +144,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoUtilsTest" />
+        <item itemvalue="JUnit.DemoUtilsTest.Test_inputString" />
+        <item itemvalue="JUnit.DemoUtilsTest.test_String_is_Null" />
+        <item itemvalue="Application.DemoUtils" />
         <item itemvalue="JUnit.DemoUtilsTest.testAdd" />
       </list>
     </recent_temporary>
@@ -105,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1724934592925</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create basic test case for add method">
+      <created>1724935222266</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724935222266</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +191,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="create basic test case for add method" />
+    <option name="LAST_COMMIT_MESSAGE" value="create basic test case for add method" />
   </component>
 </project>
