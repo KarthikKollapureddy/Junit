@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="create basic test cases">
+    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="Add @BeforeEach and @AfterEach">
       <change beforePath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1724936607756</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add @BeforeEach and @AfterEach">
+      <created>1724936889704</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724936889704</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +205,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="create basic test case for add method" />
     <MESSAGE value="create basic test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="create basic test cases" />
+    <MESSAGE value="Add @BeforeEach and @AfterEach" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add @BeforeEach and @AfterEach" />
   </component>
 </project>

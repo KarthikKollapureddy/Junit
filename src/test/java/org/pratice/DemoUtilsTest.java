@@ -1,8 +1,6 @@
 package org.pratice;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,13 +8,25 @@ import static org.junit.jupiter.api.Assertions.*;
 class DemoUtilsTest {
 
     DemoUtils demoUtils;
+
+    @BeforeAll
+    static void setupBeforeAll(){
+        System.out.println("Runs only once before all test, applicable in establishing DB connections " +
+                "and connecting to servers");
+    }
+    @AfterAll
+    static void setupAfterAll(){
+        System.out.println("Runs only once After all test, applicable in release DB connections " +
+                "and disconnecting to servers");
+    }
+
 //    Executes before each test (@Test)
-    @BeforeEach
+    @BeforeEach //lifeCycle Method
     void initialSetup(){
         demoUtils = new DemoUtils();
     }
 
-    @AfterEach
+    @AfterEach //lifeCycle Method
     void releaseResources(){
 //        System.out.println("Executes after each test case, mostly to release resources and for cleanup");
     }
