@@ -1,5 +1,7 @@
 package org.pratice;
 
+import java.util.List;
+
 public class DemoUtils {
     public int add(int a, int b){
         return a+b;
@@ -26,5 +28,17 @@ public class DemoUtils {
     }
     public String getJunitDuplicateNew(){
         return junitDuplicateNew;
+    }
+
+    public String[] firstThreeLettersOfAlphabets = {"A", "B", "C"};
+    public List<String> stringList = List.of("Junit", "jupiter", "assertions");
+
+//    getter for firstThreeLettersOfAlphabets
+    public String[] getFirstThreeLettersOfAlphabets(){
+        return firstThreeLettersOfAlphabets;
+    }
+//    getter for StringList
+    public List<String> getStringList(){
+        return stringList;
     }
 }

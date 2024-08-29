@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="Add @DisplayNameGeneration for readability at class level">
+    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="create test case for object reference.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" afterDir="false" />
     </list>
@@ -209,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1724937902626</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create test case for object reference.">
+      <created>1724938576225</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724938576225</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +239,7 @@
     <MESSAGE value="Add lifeCycle Method-info" />
     <MESSAGE value="Add Display name for readability" />
     <MESSAGE value="Add @DisplayNameGeneration for readability at class level" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add @DisplayNameGeneration for readability at class level" />
+    <MESSAGE value="create test case for object reference." />
+    <option name="LAST_COMMIT_MESSAGE" value="create test case for object reference." />
   </component>
 </project>

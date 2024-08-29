@@ -2,6 +2,8 @@ package org.pratice;
 
 import org.junit.jupiter.api.*;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
@@ -60,5 +62,29 @@ class DemoUtilsTest {
     void test_Reference_Of_Objects_Is_Same(){
         assertSame(demoUtils.getJunit(),demoUtils.getJunitDuplicate(),"Both should refer to same reference");
         assertNotSame(demoUtils.getJunit(),demoUtils.getJunitDuplicateNew(),"Both should refer to different reference");
+    }
+    /*
+    Assertions for Arrays
+    assertArrayEquals - Assert that both object arrays are deeply equal
+    assertIterableEquals - Assert that both object iterables are deeply equal
+    assertLinesMath - Assert that both lists of strings match
+     */
+    @Test
+    void test_Array_Equals(){
+        String[] testArrayActual = {"A", "B", "C"};
+        assertArrayEquals(demoUtils.getFirstThreeLettersOfAlphabets(),testArrayActual,
+                "Arrays should match");
+    }
+    @Test
+    void test_List_Equals(){
+        List<String> testListActual = List.of("Junit", "jupiter", "assertions");
+        assertIterableEquals(demoUtils.getStringList(),testListActual,
+                "Expected List should be same as actual list");
+    }
+    @Test
+    void test_Lines_Match(){
+        List<String> testListActual = List.of("Junit", "jupiter", "assertions");
+        assertLinesMatch(demoUtils.getStringList(),testListActual,
+                "Lines should match");
     }
 }
