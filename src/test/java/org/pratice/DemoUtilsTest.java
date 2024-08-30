@@ -2,6 +2,7 @@ package org.pratice;
 
 import org.junit.jupiter.api.*;
 
+import java.time.Duration;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -99,7 +100,13 @@ class DemoUtilsTest {
 
     }
     /*
-    assertTimeoutPreemptively ->
+    assertTimeoutPreemptively -> asserts that executable completes
+                    before given timeout is executed
      */
+    @Test
+    void test_Timeout(){
+        assertTimeoutPreemptively(Duration.ofSeconds(4),()->{demoUtils.checkTimeout();},
+                "Method should execute under 4 seconds");
+    }
 
 }

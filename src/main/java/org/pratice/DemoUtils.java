@@ -47,4 +47,11 @@ public class DemoUtils {
         }
         return "Number is valid as it's greater-than zero";
     }
+
+    public void checkTimeout() throws InterruptedException {
+        System.out.println("Method invoked!");
+        Thread.sleep(3000);
+        System.out.println("Method Executed after 3 seconds!");
+    }
+
 }
