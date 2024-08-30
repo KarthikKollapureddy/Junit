@@ -1,5 +1,7 @@
 package org.pratice;
 
+import org.pratice.DTO.Human;
+
 import java.util.List;
 
 public class DemoUtils {
@@ -53,5 +55,20 @@ public class DemoUtils {
         Thread.sleep(3000);
         System.out.println("Method Executed after 3 seconds!");
     }
+//    switch case in java 17 with Pattern Matching
+//static record Human (String name, int age, String profession) {}
+static record Circle (int radius) {}
+static record Shape (String name) {}
+
+public String checkObject(Object obj) {
+    System.out.println(obj.getClass());
+    return switch (obj) {
+        case Human h -> "Name: %s, age: %s and profession: %s".formatted(h.name(), h.age(), h.profession());
+        case Circle c -> "This is a circle";
+        case Shape s -> "It is just a shape";
+        case null -> "It is null";
+        default -> "It is an object";
+    };
+}
 
 }

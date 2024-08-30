@@ -1,6 +1,8 @@
 package org.pratice;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.condition.*;
+import org.pratice.DTO.Human;
 
 import java.time.Duration;
 import java.util.List;
@@ -108,5 +110,40 @@ class DemoUtilsTest {
         assertTimeoutPreemptively(Duration.ofSeconds(4),()->{demoUtils.checkTimeout();},
                 "Method should execute under 4 seconds");
     }
+    @Test
+    @Disabled("Test is disabled due to a bug") // disables a test
+    void test_logicUnder_implementation(){
+        System.out.println("""
+                method to test is under impl
+                """);
+    }
+
+    @Test
+    @EnabledOnOs(OS.WINDOWS)
+    void testOnlyOnWindows(){
+    // windows specific test
+    }
+    @Test
+    @EnabledOnOs({OS.WINDOWS, OS.MAC}) //Multiple OS
+    void testOnlyOnWindowsAndMac(){
+    // windows specific test
+    }
+    @Test
+    @EnabledOnJre(JRE.JAVA_17) //Run Test for only JRE 17
+    void testOnlyOnJava17(){
+        System.out.println("we are using java 17!");
+        assertEquals("Name: John, age: 23 and profession: Engineer",
+                demoUtils.checkObject(new Human("John",23,"Engineer")),
+                "Human details must be same!");
+    }
+    @Test
+    @EnabledForJreRange(min = JRE.JAVA_13,max = JRE.JAVA_17) // we can also specify only min as well
+    void testOnlyOnJRE17TO18(){
+        System.out.println("we are using java 17!");
+        assertEquals("Name: John, age: 23 and profession: Engineer",
+                demoUtils.checkObject(new Human("John",23,"Engineer")),
+                "Human details must be same!");
+    }
+
 
 }
