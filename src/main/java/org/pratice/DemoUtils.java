@@ -41,4 +41,10 @@ public class DemoUtils {
     public List<String> getStringList(){
         return stringList;
     }
+    public String validateNegativeValues(int number) throws Exception{
+        if (number<0){
+            throw new Exception("Number is less than Zero !");
+        }
+        return "Number is valid as it's greater-than zero";
+    }
 }

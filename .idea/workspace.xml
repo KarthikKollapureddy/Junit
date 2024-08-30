@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="create test case for object reference.">
+    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="create test case for String[], List and LinesMatch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" afterDir="false" />
@@ -52,20 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DemoUtilsTest">
-    <configuration name="DemoUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtils" />
-      <module name="JunitTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pratice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DemoUtilsTest.test_ThrowsException_for_NegativeValues">
     <configuration name="DemoUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JunitTest" />
       <extension name="coverage">
@@ -129,6 +116,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoUtilsTest.test_ThrowsException_for_NegativeValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JunitTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pratice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pratice" />
+      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
+      <option name="METHOD_NAME" value="test_ThrowsException_for_NegativeValues" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Junit" />
       <method v="2">
@@ -144,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoUtilsTest.test_ThrowsException_for_NegativeValues" />
         <item itemvalue="JUnit.DemoUtilsTest" />
         <item itemvalue="JUnit.DemoUtilsTest.Test_Reference_Of_Objects_Is_Same" />
         <item itemvalue="JUnit.DemoUtilsTest.Test_inputString" />
         <item itemvalue="JUnit.DemoUtilsTest.test_String_is_Null" />
-        <item itemvalue="Application.DemoUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1724938576225</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="create test case for String[], List and LinesMatch">
+      <created>1724941572705</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724941572705</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +250,7 @@
     <MESSAGE value="Add Display name for readability" />
     <MESSAGE value="Add @DisplayNameGeneration for readability at class level" />
     <MESSAGE value="create test case for object reference." />
-    <option name="LAST_COMMIT_MESSAGE" value="create test case for object reference." />
+    <MESSAGE value="create test case for String[], List and LinesMatch" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test case for String[], List and LinesMatch" />
   </component>
 </project>

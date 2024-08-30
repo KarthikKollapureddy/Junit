@@ -87,4 +87,19 @@ class DemoUtilsTest {
         assertLinesMatch(demoUtils.getStringList(),testListActual,
                 "Lines should match");
     }
+    /*
+    AssertThrows -> assert that an executable throws an exception of expected type
+     */
+    @Test
+    void test_ThrowsException_for_NegativeValues(){
+        assertThrows(Exception.class, () -> {demoUtils.validateNegativeValues(-1);}
+        ,"Should throw an Exception");
+        assertDoesNotThrow(()->{demoUtils.validateNegativeValues(9);},
+                "Should not throw an exception ");
+
+    }
+    /*
+    assertTimeoutPreemptively ->
+     */
+
 }
