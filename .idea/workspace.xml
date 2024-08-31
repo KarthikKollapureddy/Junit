@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="create test case for String[], List and LinesMatch">
+    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="create initial fail test for TDD">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pratice/DemoUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pratice/DemoUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pratice/tdd/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pratice/tdd/FizzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/pratice/tdd/FizzBuzzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pratice/tdd/FizzBuzzTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -33,13 +35,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2lKfxWTvWN7GAwNw2g6J9CRGcEK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,15 +44,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "junit",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DemoUtilsTest.test_ThrowsException_for_NegativeValues">
+  <component name="RunManager" selected="JUnit.FizzBuzzTest">
     <configuration name="DemoUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JunitTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pratice.*" />
+          <option name="PATTERN" value="org.pratice.DTO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,49 +70,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoUtilsTest.Test_Reference_Of_Objects_Is_Same" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DemoUtilsTest.testOnlyOnJava17" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JunitTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pratice.*" />
+          <option name="PATTERN" value="org.pratice.DTO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.pratice" />
       <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
-      <option name="METHOD_NAME" value="Test_Reference_Of_Objects_Is_Same" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoUtilsTest.Test_inputString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JunitTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pratice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.pratice" />
-      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
-      <option name="METHOD_NAME" value="Test_inputString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoUtilsTest.test_String_is_Null" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JunitTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pratice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.pratice" />
-      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
-      <option name="METHOD_NAME" value="test_String_is_Null" />
+      <option name="METHOD_NAME" value="testOnlyOnJava17" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,7 +90,7 @@
       <module name="JunitTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pratice.*" />
+          <option name="PATTERN" value="org.pratice.DTO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,26 +102,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Junit" />
+    <configuration name="DemoUtilsTest.test_logicUnder_implementation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JunitTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pratice.DTO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pratice" />
+      <option name="MAIN_CLASS_NAME" value="org.pratice.DemoUtilsTest" />
+      <option name="METHOD_NAME" value="test_logicUnder_implementation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Junit" />
-      <option name="filePath" />
+    <configuration name="FizzBuzzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JunitTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pratice.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.pratice.tdd" />
+      <option name="MAIN_CLASS_NAME" value="org.pratice.tdd.FizzBuzzTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DemoUtilsTest.test_ThrowsException_for_NegativeValues" />
+        <item itemvalue="JUnit.FizzBuzzTest" />
+        <item itemvalue="JUnit.DemoUtilsTest.testOnlyOnJava17" />
         <item itemvalue="JUnit.DemoUtilsTest" />
-        <item itemvalue="JUnit.DemoUtilsTest.Test_Reference_Of_Objects_Is_Same" />
-        <item itemvalue="JUnit.DemoUtilsTest.Test_inputString" />
-        <item itemvalue="JUnit.DemoUtilsTest.test_String_is_Null" />
+        <item itemvalue="JUnit.DemoUtilsTest.test_logicUnder_implementation" />
+        <item itemvalue="JUnit.DemoUtilsTest.test_ThrowsException_for_NegativeValues" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724933938513</updated>
+      <workItem from="1725115482728" duration="1368000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1724934592925</created>
@@ -227,8 +216,35 @@
       <option name="project" value="LOCAL" />
       <updated>1724941572705</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="create test case timeouts using assertTimeoutPreemptively">
+      <option name="closed" value="true" />
+      <created>1725040857878</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1725040857878</updated>
+    </task>
+    <task id="LOCAL-00011" summary="create test case using @Disabled and @EnabledOnOS and JRE">
+      <option name="closed" value="true" />
+      <created>1725044704047</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1725044704047</updated>
+    </task>
+    <task id="LOCAL-00012" summary="create initial fail test for TDD">
+      <option name="closed" value="true" />
+      <created>1725116934587</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1725116934587</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -251,6 +267,14 @@
     <MESSAGE value="Add @DisplayNameGeneration for readability at class level" />
     <MESSAGE value="create test case for object reference." />
     <MESSAGE value="create test case for String[], List and LinesMatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="create test case for String[], List and LinesMatch" />
+    <MESSAGE value="create test case timeouts using assertTimeoutPreemptively" />
+    <MESSAGE value="create test case using @Disabled and @EnabledOnOS and JRE" />
+    <MESSAGE value="create initial fail test for TDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="create initial fail test for TDD" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Junit$DemoUtilsTest.ic" NAME="DemoUtilsTest Coverage Results" MODIFIED="1725041524279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.pratice.*</FILTER>
+    </SUITE>
   </component>
 </project>

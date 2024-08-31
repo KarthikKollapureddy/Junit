@@ -2,6 +2,7 @@ package org.pratice.tdd;
 
 import org.junit.jupiter.api.*;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 /*
@@ -18,10 +19,15 @@ class FizzBuzzTest {
     if num is divisible by 3 and 5 -> FizzBuzz
     if num is not divisible by either 3 or 5 then return the number
      */
+    FizzBuzz fizzBuzz;
+    String fizz ="Fizz";
+    String buzz ="Buzz";
+    String fizzBuzzResult ="FizzBuzz";
     @Test
     @DisplayName("Test if input is Divisible by 3")
     @Order(1)
     void test_DivisibleByThree(){
-        fail("fail"); // initial failing test
+       assertEquals(fizz,FizzBuzz.compute(3),
+               "Should return Fizz");
     }
 }
