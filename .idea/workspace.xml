@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="create initial fail test for TDD">
+    <list default="true" id="3209120e-45fa-4bf1-8ad9-04b075151175" name="Changes" comment="create implementation for test.">
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pratice/tdd/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pratice/tdd/FizzBuzz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/pratice/tdd/FizzBuzzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pratice/tdd/FizzBuzzTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +149,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724933938513</updated>
-      <workItem from="1725115482728" duration="1368000" />
+      <workItem from="1725115482728" duration="1899000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1724934592925</created>
@@ -240,7 +238,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725116934587</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="create skeleton for test.">
+      <option name="closed" value="true" />
+      <created>1725117262262</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1725117262262</updated>
+    </task>
+    <task id="LOCAL-00014" summary="create implementation for test.">
+      <option name="closed" value="true" />
+      <created>1725117454755</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1725117454755</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +284,9 @@
     <MESSAGE value="create test case timeouts using assertTimeoutPreemptively" />
     <MESSAGE value="create test case using @Disabled and @EnabledOnOS and JRE" />
     <MESSAGE value="create initial fail test for TDD" />
-    <option name="LAST_COMMIT_MESSAGE" value="create initial fail test for TDD" />
+    <MESSAGE value="create skeleton for test." />
+    <MESSAGE value="create implementation for test." />
+    <option name="LAST_COMMIT_MESSAGE" value="create implementation for test." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Junit$DemoUtilsTest.ic" NAME="DemoUtilsTest Coverage Results" MODIFIED="1725041524279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

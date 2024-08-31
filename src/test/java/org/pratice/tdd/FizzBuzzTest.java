@@ -24,10 +24,32 @@ class FizzBuzzTest {
     String buzz ="Buzz";
     String fizzBuzzResult ="FizzBuzz";
     @Test
-    @DisplayName("Test if input is Divisible by 3")
+    @DisplayName("Test Buzz Iff Divisible by 3")
     @Order(1)
     void test_DivisibleByThree(){
        assertEquals(fizz,FizzBuzz.compute(3),
                "Should return Fizz");
     }
+    @Test
+    @DisplayName("Test Buzz Iff Divisible by 5")
+    @Order(2)
+    void test_DivisibilityByFive(){
+        assertEquals(buzz,FizzBuzz.compute(25),
+                "Should return Buzz");
+    }
+    @Test
+    @DisplayName("Test FizzBuzz Iff Divisible by 5")
+    @Order(3)
+    void test_DivisibilityByThreeAndFive(){
+        assertEquals(fizzBuzzResult,FizzBuzz.compute(15),
+                "Should return FizzBuzz");
+    }
+    @Test
+    @DisplayName("Test returns input Iff not Divisible by 5 and 3")
+    @Order(4)
+    void test_NotDivisibilityByThreeAndFive(){
+        assertEquals("4",FizzBuzz.compute(4),
+                "Should return FizzBuzz");
+    }
+
 }
