@@ -1,6 +1,8 @@
 package org.pratice.tdd;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -50,6 +52,30 @@ class FizzBuzzTest {
     void test_NotDivisibilityByThreeAndFive(){
         assertEquals("4",FizzBuzz.compute(4),
                 "Should return FizzBuzz");
+    }
+    /*
+    we can use parameterized tests as well and iterate the test for n values.
+    we can achieve this by using @ParameterizedTest Note: @Test not req
+    For source test data we can use:
+        @ValueSource -> array of values string, int, double etc
+        @CsvSource -> Array of csv String values
+        @CsvFileSource -> CSV value read from file
+        @EnumSource -> Enum Const values
+        @MethodSource -> Method to provide values
+     */
+    @ParameterizedTest(name = "value = {0}, expected = {1}") // 0 and 1 are indices respectively for csv data
+    @CsvSource({
+            "1,1",
+            "2,2",
+            "3,Fizz",
+            "4,4",
+            "5,Buzz",
+            "6,Fizz",
+            "15,FizzBuzz",
+            "30,FizzBuzz",
+    })
+    void test_FizzBuzzForCSVData(String value, String result){
+        assertEquals(result,FizzBuzz.compute(Integer.parseInt(value)));
     }
 
 }
