@@ -2,6 +2,7 @@ package org.pratice.tdd;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -75,19 +76,30 @@ class FizzBuzzTest {
             "15,FizzBuzz",
             "30,FizzBuzz",
     })
+    @Order(5)
     void test_FizzBuzzForCSVData(String value, String result){
         assertEquals(result,FizzBuzz.compute(Integer.parseInt(value)));
     }
     //Test all Fizz
     @ParameterizedTest(name = "value = {0}")
     @ValueSource(ints = {3, 6, 9, 12, 21, 27, 81})
+    @Order(7)
     void test_FizzValues(int value){
         assertEquals(fizz,FizzBuzz.compute(value));
     }
     //Test all Buzz
     @ParameterizedTest(name = "value = {0}")
     @ValueSource(ints = {5, 10, 20, 25, 35, 40, 80})
+    @Order(8)
     void test_BuzzValues(int value){
         assertEquals(buzz,FizzBuzz.compute(value));
+    }
+//    Test medium csv data
+    @DisplayName("Test medium data for Fizz Buzz")
+    @ParameterizedTest(name = "value = {0}, expected = {1}")
+    @CsvFileSource(resources = "/medium-test-data.csv")
+    @Order(6)
+    void test_mediumCSV_Data(String value, String expected){
+        assertEquals(expected,FizzBuzz.compute(Integer.parseInt(value)));
     }
 }
