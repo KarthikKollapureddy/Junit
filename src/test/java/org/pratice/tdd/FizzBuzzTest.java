@@ -3,6 +3,7 @@ package org.pratice.tdd;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -77,5 +78,16 @@ class FizzBuzzTest {
     void test_FizzBuzzForCSVData(String value, String result){
         assertEquals(result,FizzBuzz.compute(Integer.parseInt(value)));
     }
-
+    //Test all Fizz
+    @ParameterizedTest(name = "value = {0}")
+    @ValueSource(ints = {3, 6, 9, 12, 21, 27, 81})
+    void test_FizzValues(int value){
+        assertEquals(fizz,FizzBuzz.compute(value));
+    }
+    //Test all Buzz
+    @ParameterizedTest(name = "value = {0}")
+    @ValueSource(ints = {5, 10, 20, 25, 35, 40, 80})
+    void test_BuzzValues(int value){
+        assertEquals(buzz,FizzBuzz.compute(value));
+    }
 }
